@@ -218,6 +218,10 @@ body {
   text-align: center;
 }
 
+.story {
+  height: 1700px;
+}
+
 .story .story-content {
   height: 650px;
   position: relative;
@@ -287,6 +291,12 @@ body {
   line-height: 28px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.story .story-content .story-content-text .story-content-text-button:hover {
+  background-color: #7ca52d;
 }
 
 .story .about-content {
@@ -345,5 +355,86 @@ body {
   line-height: 28px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.story .about-content .about-content-text .about-content-button:hover {
+  background-color: #7ca52d;
+}
+
+.about-section {
+  background-color: #99ca3b;
+  height: 1080px;
+}
+
+.about-section .about-section-content {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-section .about-section-content [class*='item'] {
+  width: 420px;
+  color: #ffffff;
+}
+
+.about-section .about-section-content [class*='item'] .about-section-content-image {
+  border: 10px solid #fff;
+  width: 440px;
+  height: 485px;
+  position: relative;
+}
+
+.about-section .about-section-content [class*='item'] .about-section-content-image::after {
+  content: '';
+  height: 10px;
+  width: 440px;
+  border-radius: 2px;
+  background-color: #709a1e;
+  bottom: -20px;
+  margin: 0 auto;
+  left: -10px;
+  right: 0;
+  position: absolute;
+}
+
+.about-section .about-section-content [class*='item'] h2 {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.about-section .about-section-content [class*='item'] p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  height: 300px;
+}
+
+.about-section .about-section-content [class*='item'] .about-section-content-button {
+  width: 220px;
+  height: 60px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.about-section .about-section-content [class*='item'] .about-section-content-button:hover {
+  background-color: #e6e6e6;
 }
 /*# sourceMappingURL=style.css.map */

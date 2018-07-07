@@ -161,6 +161,10 @@ $color-green-main: #99ca3b;
   line-height: 28px;
   border: none;
   cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
 }
 
 @mixin barBottom($barColor, $barWidth) {
@@ -232,6 +236,7 @@ $color-green-main: #99ca3b;
 }
 
 .story {
+  height: 1700px;
   .story-content {
     height: 650px;
     position: relative;
@@ -299,6 +304,45 @@ $color-green-main: #99ca3b;
       }
       .about-content-button {
         @include button($color-green-main, #fff);
+      }
+    }
+  }
+}
+
+.about-section {
+  background-color: $color-green-main;
+  height: 1080px;
+  .about-section-content {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    [class*='item'] {
+      width: 420px;
+      color: #ffffff;
+      .about-section-content-image {
+        border: 10px solid #fff;
+        width: 440px;
+        height: 485px;
+        position: relative;
+        @include barBottom(#709a1e, 440px);
+      }
+      h2 {
+        margin-top: 50px;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+      }
+      p {
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        height: 300px;
+      }
+      .about-section-content-button {
+        @include button(#fff, #000);
       }
     }
   }

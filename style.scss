@@ -211,6 +211,10 @@ $color-green-main: #99ca3b;
         a {
           color: #000;
           text-decoration: none;
+          transition: 0.1s;
+          &:hover {
+            border-bottom: 4px solid $color-green-main;
+          }
         }
       }
     }
@@ -343,6 +347,43 @@ $color-green-main: #99ca3b;
       }
       .about-section-content-button {
         @include button(#fff, #000);
+      }
+    }
+  }
+}
+
+.massage {
+  padding-top: 50px;
+  .massage-content {
+    display: flex;
+    justify-content: space-between;
+    .massage-content-image {
+      width: 560px;
+      position: relative;
+      border: 10px solid #fff;
+      @include barBottom($color-green-main, 560px);
+    }
+    .massage-content-text {
+      display: flex;
+      flex-direction: column;
+      color: #4e4c4c;
+      width: 60%;
+      text-align: justify;
+      padding-top: 10%;
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+        line-height: 28px;
+        margin: 50px auto;
+      }
+      .massage-content-button {
+        @include button($color-green-main, #fff);
       }
     }
   }

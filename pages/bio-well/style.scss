@@ -1,0 +1,285 @@
+// Eric Meyer’s “Reset CSS” 2.0
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #f7f7f7;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// end of css reset
+
+.container {
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$color-green-main: #99ca3b;
+
+@mixin barBottom($barColor, $barWidth) {
+  &::after {
+    content: '';
+    height: 10px;
+    width: $barWidth;
+    border-radius: 2px;
+    background-color: $barColor;
+    bottom: -20px;
+    margin: 0 auto;
+    left: -10px;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.hero {
+  background-image: url(../images/herobg.jpg);
+  background-size: contain;
+  background-position-y: 120px;
+  height: 720px;
+  background-repeat: no-repeat;
+  width: 100%;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-list {
+      color: #575656;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      display: inline-block;
+      li {
+        display: inline;
+        line-height: 120px;
+        padding-right: 20px;
+        &:last-of-type {
+          padding-right: 0;
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+          transition: 0.1s;
+          &:hover {
+            border-bottom: 4px solid $color-green-main;
+          }
+        }
+      }
+    }
+  }
+  .hero-text {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: #ffffff;
+      align-self: center;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 1.3px;
+    }
+  }
+}
+
+.story {
+  .story-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    .story-content-image {
+      border: 10px solid white;
+      border-radius: 2px;
+      max-width: 560px;
+      height: 100%;
+      position: relative;
+      @include barBottom($color-green-main, 560px);
+    }
+    .story-content-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      color: #4e4c4c;
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+      }
+      p {
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.home-gallery {
+  margin-top: 100px;
+  .gallery-heading {
+    text-align: center;
+    color: #4e4c4c;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1.3px;
+    margin: 100px 0;
+  }
+  .gallery-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .gallery-item {
+      width: 24%;
+    }
+  }
+}
+
+.footer {
+  margin: 100px auto;
+  text-align: center;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+}

@@ -87,6 +87,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -151,17 +152,18 @@ body {
 $color-green-main: #99ca3b;
 
 @mixin button($bg-color, $txt-color) {
-  width: 220px;
-  height: 60px;
+  max-width: 200px;
+  max-height: 60px;
+  padding: 20px 50px;
   border-radius: 2px;
   background-color: $bg-color;
-  color: $txt-color;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px;
   border: none;
-  cursor: pointer;
+  text-align: center;
   transition: 0.4s;
+  color: $txt-color;
+  text-decoration: none;
   &:hover {
     background-color: darken($bg-color, 10%);
   }
@@ -315,15 +317,15 @@ $color-green-main: #99ca3b;
 
 .about-section {
   background-color: $color-green-main;
-  height: 1080px;
+  height: 100%;
   .about-section-content {
-    padding-top: 50px;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
-
     [class*='item'] {
-      width: 420px;
+      width: 440px;
       color: #ffffff;
+      text-align: justify;
       .about-section-content-image {
         border: 10px solid #fff;
         width: 440px;

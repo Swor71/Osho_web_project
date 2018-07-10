@@ -85,6 +85,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -287,18 +288,19 @@ body {
 
 .story .story-content .story-content-text .story-content-text-button {
   margin-top: 50px;
-  width: 220px;
-  height: 60px;
+  max-width: 200px;
+  max-height: 60px;
+  padding: 20px 50px;
   border-radius: 2px;
   background-color: #99ca3b;
-  color: #fff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px;
   border: none;
-  cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #fff;
+  text-decoration: none;
 }
 
 .story .story-content .story-content-text .story-content-text-button:hover {
@@ -351,18 +353,19 @@ body {
 }
 
 .story .about-content .about-content-text .about-content-button {
-  width: 220px;
-  height: 60px;
+  max-width: 200px;
+  max-height: 60px;
+  padding: 20px 50px;
   border-radius: 2px;
   background-color: #99ca3b;
-  color: #fff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px;
   border: none;
-  cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #fff;
+  text-decoration: none;
 }
 
 .story .about-content .about-content-text .about-content-button:hover {
@@ -371,11 +374,11 @@ body {
 
 .about-section {
   background-color: #99ca3b;
-  height: 1080px;
+  height: 100%;
 }
 
 .about-section .about-section-content {
-  padding-top: 50px;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,8 +388,9 @@ body {
 }
 
 .about-section .about-section-content [class*='item'] {
-  width: 420px;
+  width: 440px;
   color: #ffffff;
+  text-align: justify;
 }
 
 .about-section .about-section-content [class*='item'] .about-section-content-image {
@@ -426,18 +430,19 @@ body {
 }
 
 .about-section .about-section-content [class*='item'] .about-section-content-button {
-  width: 220px;
-  height: 60px;
+  max-width: 200px;
+  max-height: 60px;
+  padding: 20px 50px;
   border-radius: 2px;
   background-color: #fff;
-  color: #000;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px;
   border: none;
-  cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #000;
+  text-decoration: none;
 }
 
 .about-section .about-section-content [class*='item'] .about-section-content-button:hover {
@@ -505,18 +510,19 @@ body {
 }
 
 .massage .massage-content .massage-content-text .massage-content-button {
-  width: 220px;
-  height: 60px;
+  max-width: 200px;
+  max-height: 60px;
+  padding: 20px 50px;
   border-radius: 2px;
   background-color: #99ca3b;
-  color: #fff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px;
   border: none;
-  cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #fff;
+  text-decoration: none;
 }
 
 .massage .massage-content .massage-content-text .massage-content-button:hover {

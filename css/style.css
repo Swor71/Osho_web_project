@@ -152,7 +152,7 @@ body {
 }
 
 .hero {
-  background-image: url(../images/bg-main.png);
+  background-image: url(../images/home-hero-bg.jpg);
   background-size: contain;
   background-position-y: 120px;
   height: 720px;

@@ -150,23 +150,6 @@ body {
 
 $color-green-main: #99ca3b;
 
-@mixin button($bg-color, $txt-color) {
-  width: 220px;
-  height: 60px;
-  border-radius: 2px;
-  background-color: $bg-color;
-  color: $txt-color;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 28px;
-  border: none;
-  cursor: pointer;
-  transition: 0.4s;
-  &:hover {
-    background-color: darken($bg-color, 10%);
-  }
-}
-
 @mixin barBottom($barColor, $barWidth) {
   &::after {
     content: '';
@@ -183,7 +166,7 @@ $color-green-main: #99ca3b;
 }
 
 .hero {
-  background-image: url(../images/home-hero-bg.jpg);
+  background-image: url(../images/herobg.jpg);
   background-size: contain;
   background-position-y: 120px;
   height: 720px;
@@ -193,6 +176,8 @@ $color-green-main: #99ca3b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
+    background-color: #fff;
     .navbar-list {
       color: #575656;
       font-size: 14px;
@@ -220,48 +205,40 @@ $color-green-main: #99ca3b;
     }
   }
   .hero-text {
-    max-width: 1200px;
-    color: #ffffff;
-    text-align: justify;
-    margin: 200px auto 0 auto;
-    p {
-      font-size: 20px;
-      font-weight: 300;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: #ffffff;
+      align-self: center;
+      font-size: 26px;
+      font-weight: 700;
       line-height: 28px;
-      letter-spacing: 1px;
-    }
-    h4 {
-      margin-top: 60px;
-      font-size: 12px;
-      letter-spacing: 0.6px;
-      text-align: center;
+      letter-spacing: 1.3px;
     }
   }
 }
 
 .story {
-  height: 1700px;
   .story-content {
-    height: 650px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
     .story-content-image {
       border: 10px solid white;
       border-radius: 2px;
       max-width: 560px;
-      height: 630px;
-      position: absolute;
-      top: -100px;
+      height: 100%;
+      position: relative;
       @include barBottom($color-green-main, 560px);
     }
     .story-content-text {
-      float: right;
       display: flex;
       flex-direction: column;
       margin-left: 50px;
-      width: 60%;
       color: #4e4c4c;
       h2 {
-        margin-top: 100px;
         font-size: 26px;
         font-weight: 700;
         letter-spacing: 1.3px;
@@ -274,127 +251,28 @@ $color-green-main: #99ca3b;
         letter-spacing: 0.8px;
         text-align: justify;
       }
-      .story-content-text-button {
-        margin-top: 50px;
-        @include button($color-green-main, #fff);
-      }
-    }
-  }
-  .about-content {
-    text-align: center;
-    height: 600px;
-    .about-content-image {
-      width: 1540px;
-      border: 10px solid #fff;
-      border-radius: 2px;
-      position: relative;
-      @include barBottom($color-green-main, 1540px);
-    }
-    .about-content-text {
-      margin-top: 50px;
-      text-align: left;
-      color: #4e4c4c;
-      h2 {
-        font-size: 26px;
-        font-weight: 700;
-        letter-spacing: 1.3px;
-      }
-      p {
-        margin: 50px auto;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.8px;
-        line-height: 28px;
-      }
-      .about-content-button {
-        @include button($color-green-main, #fff);
-      }
-    }
-  }
-}
-
-.about-section {
-  background-color: $color-green-main;
-  height: 1080px;
-  .about-section-content {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-
-    [class*='item'] {
-      width: 420px;
-      color: #ffffff;
-      .about-section-content-image {
-        border: 10px solid #fff;
-        width: 440px;
-        height: 485px;
-        position: relative;
-        @include barBottom(#709a1e, 440px);
-      }
-      h2 {
-        margin-top: 50px;
-        font-size: 26px;
-        font-weight: 700;
-        letter-spacing: 1.3px;
-      }
-      p {
-        margin-top: 50px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0.8px;
-        height: 300px;
-      }
-      .about-section-content-button {
-        @include button(#fff, #000);
-      }
-    }
-  }
-}
-
-.massage {
-  padding-top: 50px;
-  .massage-content {
-    display: flex;
-    justify-content: space-between;
-    .massage-content-image {
-      width: 560px;
-      position: relative;
-      border: 10px solid #fff;
-      @include barBottom($color-green-main, 560px);
-    }
-    .massage-content-text {
-      display: flex;
-      flex-direction: column;
-      color: #4e4c4c;
-      width: 60%;
-      text-align: justify;
-      padding-top: 10%;
-      h2 {
-        font-size: 26px;
-        font-weight: 700;
-        letter-spacing: 1.3px;
-      }
-      p {
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.8px;
-        line-height: 28px;
-        margin: 50px auto;
-      }
-      .massage-content-button {
-        @include button($color-green-main, #fff);
-      }
     }
   }
 }
 
 .home-gallery {
   margin-top: 100px;
+  .gallery-heading {
+    text-align: center;
+    color: #4e4c4c;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1.3px;
+    margin: 100px 0;
+  }
   .gallery-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    .gallery-item {
+      width: 24%;
+    }
   }
 }
 

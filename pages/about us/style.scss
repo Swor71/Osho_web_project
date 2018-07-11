@@ -164,17 +164,10 @@ $color-green-main: #99ca3b;
     position: absolute;
   }
 }
-
-.hero {
-  background-image: url(../images/herobg.jpg);
-  background-size: contain;
-  background-position-y: 120px;
-  height: 720px;
-  background-repeat: no-repeat;
-  width: 100%;
+.header {
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 120px;
     background-color: #fff;
@@ -204,6 +197,13 @@ $color-green-main: #99ca3b;
       }
     }
   }
+}
+
+.hero {
+  background-image: url(../images/about-us-hero-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
   .hero-text {
     height: 600px;
     display: flex;

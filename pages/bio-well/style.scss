@@ -164,18 +164,13 @@ $color-green-main: #99ca3b;
     position: absolute;
   }
 }
-
-.hero {
-  background-image: url(../images/herobg.jpg);
-  background-size: contain;
-  background-position-y: 120px;
-  height: 720px;
-  background-repeat: no-repeat;
-  width: 100%;
+.header {
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 120px;
+    background-color: #fff;
     .navbar-list {
       color: #575656;
       font-size: 14px;
@@ -202,11 +197,20 @@ $color-green-main: #99ca3b;
       }
     }
   }
-  .hero-text {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.hero-bio-well {
+  background-image: url(../images/biowell-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  .hero-bio-well-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     h1 {
       color: #ffffff;
       align-self: center;

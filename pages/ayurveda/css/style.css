@@ -195,8 +195,8 @@ body {
   border-bottom: 4px solid #99ca3b;
 }
 
-.hero-about-us {
-  background-image: url(../images/about-us-hero-bg.jpg);
+.hero-ayurveda {
+  background-image: url(../images/ayurveda-hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -204,7 +204,7 @@ body {
   position: relative;
 }
 
-.hero-about-us .hero-about-us-text {
+.hero-ayurveda .hero-ayurveda-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -212,7 +212,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.hero-about-us .hero-about-us-text h1 {
+.hero-ayurveda .hero-ayurveda-text h1 {
   color: #ffffff;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

@@ -219,14 +219,14 @@ $color-green-main: #99ca3b;
   }
 }
 
-.hero {
+.hero-home {
   background-image: url(../images/home-hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
   width: 100%;
   position: relative;
-  .hero-text {
+  .hero-home-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -362,18 +362,18 @@ $color-green-main: #99ca3b;
   }
 }
 
-.massage {
+.massage-section {
   padding-top: 50px;
-  .massage-content {
+  .massage-section-content {
     display: flex;
     justify-content: space-between;
-    .massage-content-image {
+    .massage-section-content-image {
       width: 560px;
       position: relative;
       border: 10px solid #fff;
       @include barBottom($color-green-main, 560px);
     }
-    .massage-content-text {
+    .massage-section-content-text {
       display: flex;
       flex-direction: column;
       color: #4e4c4c;
@@ -392,7 +392,7 @@ $color-green-main: #99ca3b;
         line-height: 28px;
         margin: 50px auto;
       }
-      .massage-content-button {
+      .massage-section-content-button {
         @include button($color-green-main, #fff);
       }
     }

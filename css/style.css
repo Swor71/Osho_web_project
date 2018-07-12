@@ -196,7 +196,7 @@ body {
   border-bottom: 4px solid #99ca3b;
 }
 
-.hero {
+.hero-home {
   background-image: url(../images/home-hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ body {
   position: relative;
 }
 
-.hero .hero-text {
+.hero-home .hero-home-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -216,14 +216,14 @@ body {
   text-align: justify;
 }
 
-.hero .hero-text p {
+.hero-home .hero-home-text p {
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 1px;
 }
 
-.hero .hero-text h4 {
+.hero-home .hero-home-text h4 {
   margin-top: 60px;
   font-size: 12px;
   letter-spacing: 0.6px;
@@ -454,11 +454,11 @@ body {
   background-color: #e6e6e6;
 }
 
-.massage {
+.massage-section {
   padding-top: 50px;
 }
 
-.massage .massage-content {
+.massage-section .massage-section-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,13 +467,13 @@ body {
           justify-content: space-between;
 }
 
-.massage .massage-content .massage-content-image {
+.massage-section .massage-section-content .massage-section-content-image {
   width: 560px;
   position: relative;
   border: 10px solid #fff;
 }
 
-.massage .massage-content .massage-content-image::after {
+.massage-section .massage-section-content .massage-section-content-image::after {
   content: '';
   height: 10px;
   width: 560px;
@@ -486,7 +486,7 @@ body {
   position: absolute;
 }
 
-.massage .massage-content .massage-content-text {
+.massage-section .massage-section-content .massage-section-content-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,13 +500,13 @@ body {
   padding-top: 10%;
 }
 
-.massage .massage-content .massage-content-text h2 {
+.massage-section .massage-section-content .massage-section-content-text h2 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1.3px;
 }
 
-.massage .massage-content .massage-content-text p {
+.massage-section .massage-section-content .massage-section-content-text p {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.8px;
@@ -514,7 +514,7 @@ body {
   margin: 50px auto;
 }
 
-.massage .massage-content .massage-content-text .massage-content-button {
+.massage-section .massage-section-content .massage-section-content-text .massage-section-content-button {
   max-width: 200px;
   max-height: 60px;
   padding: 20px 50px;
@@ -530,7 +530,7 @@ body {
   text-decoration: none;
 }
 
-.massage .massage-content .massage-content-text .massage-content-button:hover {
+.massage-section .massage-section-content .massage-section-content-text .massage-section-content-button:hover {
   background-color: #7ca52d;
 }
 
